@@ -1,0 +1,31 @@
+
+<div class="box" id="accountBox">
+  <h2>Player account</h2>
+  <p id="accountStatus">Sign in to save your XP online.</p>
+
+  <input id="email" type="email"
+    placeholder="Email address">
+  <input id="password" type="password"
+    placeholder="Password">
+
+  <input id="displayName" maxlength="20"
+    placeholder="Choose a player nickname">
+
+  <div class="row">
+    <button class="primary" onclick="signUp()">Create account</button>
+    <button onclick="signIn()">Log in</button>
+    <button onclick="signOut()">Log out</button>
+  </div>
+
+  <p id="authMessage" class="hint"></p>
+</div>
+
+<div class="box" id="leaderboard" hidden>
+  <h2>Global leaderboard</h2>
+  <p class="hint">Top players ranked by XP.</p>
+  <div id="leaderboardRows">Loading...</div>
+  <div class="row">
+    <button onclick="showStudy()">Back to studying</button>
+    <button onclick="loadLeaderboard()">Refresh</button>
+  </div>
+</div>
