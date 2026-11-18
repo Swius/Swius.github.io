@@ -63,19 +63,7 @@ details textarea{min-height:140px;margin-top:10px}
   </details>
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script>
-  const SUPABASE_URL = 'https://cpxgmintonhfrslazodr.supabase.co';
-
-const SUPABASE_KEY = 'sb_publishable_dUvEPx5lvNrLvAx8Rm4MCQ_3j14MnUf';
-
-const supabaseClient = window.supabase.createClient(
-  SUPABASE_URL,
-  SUPABASE_KEY
-);
-
-let currentUser = null;
-let currentProfile = null;
 // Edit this list to change the built-in cards. Each card: q (question), a (answer), why (explanation).
 const r = (n, d = 6) => +n.toFixed(d);
 const K = (t, q, a, why = '') => ({t, q, a, why});
